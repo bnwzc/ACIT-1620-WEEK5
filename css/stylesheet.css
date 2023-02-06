@@ -12,6 +12,12 @@ body{
 
 .backgroundcolor{
 
-    background-color:#2b7d83
+    background-color:#2b7d83;
+
+}
+
+.textcenter{
+
+    text-align: center;
 
 }
