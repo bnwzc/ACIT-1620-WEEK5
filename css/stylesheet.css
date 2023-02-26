@@ -1,4 +1,4 @@
-h1{
+header h1{
 
     color:#1616ac;
     text-align: center;
@@ -20,6 +20,12 @@ body{
 .textcenter{
 
     text-align: center;
+
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
 
 }
 
