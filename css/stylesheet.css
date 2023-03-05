@@ -1,3 +1,7 @@
+header{
+    padding:0;
+    height:112px
+}
 header h1{
 
     color:#1616ac;
@@ -23,33 +27,47 @@ body{
 
 }
 
-.flex-container{
-    display:flex;
-    padding: 20px;
-    justify-content: center;
-}
-.flex-1{
-    margin-right:10px;
-}
-.course-grid{
-    display:grid;
-    grid-template-columns: 1fr 2fr;
-    border-bottom: black solid 1px;
-}
-
 li{
     padding-top:5px;
 }
+nav li{
+    text-align: center;
+}
 
 footer{
-    height: 0px;
-    line-height: 0px;
+    text-align: center;
+    margin-bottom:20px;
 }
 
-header{
-    padding:0;
-    margin:0;
-    height:100px
+.order-1{
+    order:1
 }
+.order-2{
+    order:2
+}
+.order-3{
+    order:3
+}
+
+@media screen and (min-width:600px){
+    .course-grid{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        border-bottom: black solid 1px;
+    }
+    .flex-container{
+            display:flex;
+            padding: 20px;
+            justify-content: center;
+    }
+    .flex-1{
+            margin-right:10px;
+    }
+}
+
+
+
+
+
 
 
