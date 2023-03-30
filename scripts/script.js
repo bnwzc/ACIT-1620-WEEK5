@@ -56,8 +56,27 @@ function createCourseArray(){
     const courseDate = document.querySelectorAll(".courseDate")
     let courselist = []
     for(var i = 0; i < courseID.length;i = i + 1){
-        course.push({code:courseID[i].textContent,date:courseDate[i].textContent})
+        courselist.push({code:courseID[i].textContent,date:courseDate[i].textContent})
     }   
     return courselist
 }
-createCourseArray()
+function findCourse(courseList){
+    do{
+        user = prompt("Type a 4 digits-code")
+    }while((isNaN(user)) || (user.length != 4))
+    index = 0
+    judge = false
+    for(let i of courseList){
+        
+        if(i["code"].slice(5,9) == user){
+            const x = document.querySelectorAll('.course')[index]
+            x.style.backgroundColor = 'green'
+            judge = true
+        }
+        index = index + 1
+    }
+    if(judge == false){
+        
+    }
+}
+findCourse(createCourseArray())
