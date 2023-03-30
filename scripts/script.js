@@ -78,22 +78,21 @@ function findCourse(courseList){
     if(judge == false){
         const newlist = document.createElement('li')
         newlist.style="list-style-type: none;"
-        newlist.class="course-grid course"
+        newlist.classList.add("course-grid")
         document.querySelector("ul").appendChild(newlist)
         const newcourseID = document.createElement('a')
         newcourseID.textContent="ACIT-"+user
         newcourseID.href="http://www.bcit.ca"
         newcourseID.target="_blank"
-        newcourseID.class="courseID"
+        newcourseID.classList.add("order-1")
         newlist.appendChild(newcourseID)
         const newcourseDate = document.createElement('p')
         newcourseDate.textContent="Fall 2020"
-        newcourseDate.class="courseDate"
-        newcourseDate.class="order-3"
+        newcourseDate.classList.add("order-3")
         newlist.appendChild(newcourseDate)
         const newcourseDescription = document.createElement('p')
         newcourseDescription.textContent="N/A"
-        newcourseDescription.class="order-2"
+        newcourseDescription.classList.add("order-2")
         newlist.appendChild(newcourseDescription)
 
     }
