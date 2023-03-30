@@ -49,3 +49,15 @@ if(judge == true){
 for(let course of courseList){
     console.log(course)
 }
+
+
+function createCourseArray(){
+    const courseID = document.querySelectorAll(".courseID")
+    const courseDate = document.querySelectorAll(".courseDate")
+    let courselist = []
+    for(var i = 0; i < courseID.length;i = i + 1){
+        course.push({code:courseID[i].textContent,date:courseDate[i].textContent})
+    }   
+    return courselist
+}
+createCourseArray()
